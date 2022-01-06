@@ -1,4 +1,5 @@
 import tkinter.messagebox
+import tkinter.font
 from tkinter import *
 
 
@@ -10,16 +11,16 @@ def check_number(number):
         return False
 
 
-class LoanCalculator():
+class LoanCalculator:
     def __init__(self):
         self.root = Tk()
-
-        self.lb_month_pay = Label(self.root, font=("Calibri", 25))
-        self.lb_total_pay = Label(self.root, font=("Calibri", 25))
+        myFont = tkinter.font.Font(family="Calibri", size=25)
+        self.lb_month_pay = Label(self.root, font=myFont)
+        self.lb_total_pay = Label(self.root, font=myFont)
         # Create entry to input value
-        self.entry_annual = Entry(self.root, font=("Calibri", 25), justify=RIGHT)
-        self.entry_year = Entry(self.root, font=("Calibri", 25), justify=RIGHT)
-        self.entry_loan = Entry(self.root, font=("Calibri", 25), justify=RIGHT)
+        self.entry_annual = Entry(self.root, font=myFont, justify=RIGHT)
+        self.entry_year = Entry(self.root, font=myFont, justify=RIGHT)
+        self.entry_loan = Entry(self.root, font=myFont, justify=RIGHT)
 
         self.createUI()
 
