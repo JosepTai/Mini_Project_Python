@@ -47,5 +47,5 @@ if __name__ == '__main__':
             print(f"File {file_run} is running...")
             time.sleep(1)
             print(f"\n############ {file_run} ############\n")
-            os.system(f'py {file_run}')
+            os.system(f'py {dir_run}/{file_run}')
             print('\n############ Succeed ############ \n')

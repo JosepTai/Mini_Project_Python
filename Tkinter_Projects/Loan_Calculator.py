@@ -91,8 +91,6 @@ class LoanCalculator():
             self.lb_month_pay.config(text=format(month_pay, '10.2f'))
             self.lb_total_pay.config(text=format(total_pay, '10.2f'))
 
-        pass
-
     def run(self):
         root = self.root
         root.mainloop()
