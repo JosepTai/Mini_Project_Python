@@ -59,15 +59,9 @@ class LoanCalculator:
         btn.grid(column=0, row=5, columnspan=2)
 
     def clear(self):
-        text_1 = StringVar()
-        text_2 = StringVar()
-        text_3 = StringVar()
-        text_1.set("")
-        text_2.set("")
-        text_3.set("")
-        self.entry_annual.config(textvariable=text_1)
-        self.entry_year.config(textvariable=text_2)
-        self.entry_loan.config(textvariable=text_3)
+        self.entry_annual.delete(0, END)
+        self.entry_year.delete(0,END)
+        self.entry_loan.delete(0, END)
         self.lb_month_pay.config(text="")
         self.lb_total_pay.config(text="")
 
